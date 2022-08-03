@@ -31,7 +31,7 @@ void my_Susan(cv::Mat src, cv::Mat &dst)
 	     3,3,3,
 	};
 	cv::Mat gray_padd;
-	cv::copyMakeBorder(gray, gray_padd, 3, 3, 3, 3, cv::BORDER_REFLECT);//做对称形的扩充
+	cv::copyMakeBorder(gray, gray_padd, 3, 3, 3, 3, cv::BORDER_REFLECT);//做对称形状的扩充
 	int t = 50;
 	int g = 8;
 	for (int i = 3; i < gray_padd.rows-3; i++)
