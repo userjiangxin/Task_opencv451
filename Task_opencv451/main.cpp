@@ -3,7 +3,7 @@
 
 int main()
 {
-	cv::Mat src = cv::imread("D:/opencv/pictures/gaolou.jpeg");
+	cv::Mat src = cv::imread("D:/opencv/pictures/tangle.tif");
 	cv::Mat gray;
 	//cv::Mat t = cv::imread("D:/opencv/pictures/shuiyin.jpg");
 	//src.convertTo(src, CV_32FC1);
@@ -28,10 +28,10 @@ int main()
 	}*/
 	cv::Mat dst;
 	//cv::imshow("res", res);
-	//my_Susan(src, dst);
-	//imshow("dst", dst);
-	my_Harris(src, dst,cv::Size(3,3),0.04,0.1);
+	my_Susan(src, dst);
 	imshow("dst", dst);
+	//my_Harris(src, dst,cv::Size(3,3),0.04,0.1);
+	//imshow("dst", dst);
 	
 	cv::waitKey(0);
 	cv::destroyAllWindows();
